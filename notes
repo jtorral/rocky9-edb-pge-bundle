@@ -1,0 +1,3 @@
+docker run -p 1963:5432 -v rl9-pgdata:/pgdata --hostname=rl9 --name=rl9 -dt rockylinux:9
+
+

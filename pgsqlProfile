@@ -1,0 +1,12 @@
+# enterprisedb uses /usr/ebd/pg17/bin for its install. So, setting a different path than community install
+
+export PATH=$PATH:/usr/edb/pge17/bin/
+
+
+export PGDATA=/pgdata/17/data
+
+# enterprisedb use the socket dir /var/run/edb-pge. By setting it in the profile, we should be able to skip
+# having to specify it for local connections in psql -h /var/run/edb-pge
+# It's just a little less to worry about. 
+
+export PGHOST=/var/run/edb-pge
